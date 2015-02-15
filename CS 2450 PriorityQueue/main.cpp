@@ -7,9 +7,28 @@
 //
 
 #include <iostream>
+#include <stdio.h>
+#include <vector>
+
+using namespace std;
+
+class PriorityQueue {
+public:
+    void getInput(){
+        string input;
+        vector<int> vec;
+        
+        cout << "Enter input: " << endl;
+        while(getline(cin, input)){
+            if(input.empty())
+                break;
+            cout << "Enter input: " << endl;
+        }
+    }
+};
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
- 
+    PriorityQueue pq;
+    pq.getInput();
     return 0;
 }
